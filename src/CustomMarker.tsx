@@ -1,5 +1,5 @@
-import { MarkerComponentProps } from 'react-image-marker';
- 
+import { MarkerComponentProps } from "react-image-marker";
+
 const CustomMarker = (props: MarkerComponentProps) => {
   return (
     <div
@@ -9,15 +9,17 @@ const CustomMarker = (props: MarkerComponentProps) => {
         flexDirection: "column",
         textAlign: "center",
         position: "relative",
-        left: `8px`,
+        // left: `8px`,
         cursor: "crosshair",
-        height:"20px"
+        height: "20px",
       }}
     >
       <span>+</span>
-      <span style={{position:"fixed", zIndex:"100", marginTop:"15px"}}>{props.itemNumber.toString()}</span>
+      <span style={{ position: "fixed", zIndex: "100", marginTop: "15px" }}>
+        {props.itemNumber.toString()}
+      </span>
     </div>
   );
 };
 
-export default CustomMarker
+export default CustomMarker;
