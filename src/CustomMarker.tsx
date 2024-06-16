@@ -11,10 +11,11 @@ const CustomMarker = (props: MarkerComponentProps) => {
         position: "relative",
         left: `8px`,
         cursor: "crosshair",
+        height:"20px"
       }}
     >
       <span>+</span>
-      <span>{props.itemNumber.toString()}</span>
+      <span style={{position:"fixed", zIndex:"100", marginTop:"15px"}}>{props.itemNumber.toString()}</span>
     </div>
   );
 };
